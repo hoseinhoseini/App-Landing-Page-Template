@@ -86,3 +86,44 @@ ul {
 /* ---------------
    Navbar
 ----------------*/
+.navbar {
+    background: var(--main-color);
+    padding: 20px 0;
+}
+
+.navbar .container {
+    padding: 15px 0;
+}
+
+.navbar .navbar-brand {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.navbar .nav-item {
+    margin-right: 40px;
+}
+
+.navbar .nav-item .nav-link {
+    color: #ffffff;
+    padding: 5px 0;
+    position: relative;
+}
+
+.navbar .nav-item .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #ffffff;
+    transition: all 0.5s ease;
+    transform: scale(0);
+}
+
+.navbar .nav-item .active::before,
+.navbar .nav-item .nav-link:hover::before {
+    transform: scale(1);
+}
