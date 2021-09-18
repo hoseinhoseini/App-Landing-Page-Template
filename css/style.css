@@ -180,6 +180,13 @@ ul {
 .navbar {
     background: transparent;
     padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.navbar.navbar-shrink {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    background: var(--main-color);
+    padding: 10px 0;
 }
 
 .navbar .container {
@@ -223,7 +230,7 @@ ul {
    Home Section
 ----------------*/
 .home {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 150px 0;
     background: var(--main-to-dark-color);
     border-radius: 0 0 200px 0;
