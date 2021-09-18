@@ -112,10 +112,23 @@ ul {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
+
+@keyframes bounceTop_01 {
+    0%,
+    100% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+}
+
 /* ---------------
    Navbar
 ----------------*/
@@ -185,6 +198,19 @@ ul {
 
 .home .home-btn {
     margin: 40px 0 0 0;
+}
+
+.home-btn .video-play-btn {
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    animation: pluse_01 2s ease infinite;
+}
+
+.home-btn .video-play-btn i {
+    vertical-align: middle;
+    text-align: center;
 }
 
 .home-img img {
