@@ -108,6 +108,14 @@ ul {
     background: var(--main-color);
 }
 
+@keyframes spin_01 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 /* ---------------
    Navbar
 ----------------*/
@@ -117,7 +125,7 @@ ul {
 }
 
 .navbar .container {
-    padding: 15px 0;
+    padding: 0 15px;
 }
 
 .navbar .navbar-brand {
@@ -181,6 +189,9 @@ ul {
 
 .home-img img {
     max-width: 250px;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 32px;
+    animation: bounceTop_01 3s ease infinite;
 }
 
 .home-img {
