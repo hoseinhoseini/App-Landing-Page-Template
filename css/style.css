@@ -66,6 +66,9 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     background: #ffffff;
+    line-height: 1.5;
+    direction: rtl;
+    text-align: right;
 }
 * {
     margin: 0;
@@ -126,4 +129,30 @@ ul {
 .navbar .nav-item .active::before,
 .navbar .nav-item .nav-link:hover::before {
     transform: scale(1);
+}
+
+/* ---------------
+   Home Section
+----------------*/
+.home {
+    min-height: 100vh;
+    padding: 150px 0;
+    background: var(--main-to-dark-color);
+}
+
+.home-text h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 20px;
+}
+.home-text p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.home-img img {
+    max-width: 250px;
 }
