@@ -107,6 +107,7 @@ ul {
     color: #ffffff;
     background: var(--main-color);
 }
+
 /* ---------------
    Navbar
 ----------------*/
@@ -180,4 +181,33 @@ ul {
 
 .home-img img {
     max-width: 250px;
+}
+
+.home-img {
+    position: relative;
+}
+
+.home-img .circle {
+    position: absolute;
+    z-index: 1;
+    height: 400px;
+    width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-img .circle::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    left: 30px;
+    top: 30px;
+    transform-origin: 170px 170px;
+    animation: spin_01 10s linear infinite;
 }
