@@ -60,6 +60,7 @@
     --black-000: #ffffff;
     --black-alpha-100: rgba(0, 0, 0, 0.05);
 }
+
 body {
     font-family: 'YekanBakh';
     font-size: 16px;
@@ -70,6 +71,7 @@ body {
     direction: rtl;
     text-align: right;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -86,6 +88,25 @@ ul {
     list-style: none;
 }
 
+.btn-1 {
+    background: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    color: var(--main-color);
+    transition: all 0.5s ease;
+    box-shadow: var(--shadow-black-300);
+    font-weight: 500;
+}
+
+.btn-1:focus {
+    box-shadow: var(--shadow-black-300);
+}
+
+.btn-1:hover {
+    color: #ffffff;
+    background: var(--main-color);
+}
 /* ---------------
    Navbar
 ----------------*/
