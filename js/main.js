@@ -1,4 +1,22 @@
 // ----------------------------------------------------------------
+// ------------------------- Navbar Shrink -------------------------
+// ----------------------------------------------------------------
+const navbar = document.querySelector('.navbar')
+
+document.addEventListener('scroll', function () {
+    const scrollHeight = window.pageYOffset
+
+    if (scrollHeight > 90) {
+        navbar.classList.add('navbar-shrink')
+    } else {
+        navbar.classList.remove('navbar-shrink')
+    }
+})
+// ----------------------------------------------------------------
+// ------------------------- Navbar Shrink -------------------------
+// ----------------------------------------------------------------
+
+// ----------------------------------------------------------------
 // ------------------------- Video Player -------------------------
 // ----------------------------------------------------------------
 
@@ -19,7 +37,9 @@ videoPlayBtn.addEventListener('click', function () {
 })
 
 videoPlayerClose.addEventListener('click', function () {
-    videoPopup.classList.remove('video-popup-open')
+    if (videoPopup.classList.contains('video-popup-open')) {
+        videoPopup.classList.remove('video-popup-open')
+    }
 })
 
 // ----------------------------------------------------------------
