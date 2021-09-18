@@ -224,6 +224,10 @@ ul {
     padding: 0;
     animation: pluse_01 2s ease infinite;
 }
+.home-btn .video-play-btn:hover {
+    animation: none;
+    box-shadow: var(--shadow-black-300);
+}
 
 .home-btn .video-play-btn i {
     vertical-align: middle;
