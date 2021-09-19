@@ -116,6 +116,26 @@ ul {
     background: var(--main-color);
 }
 
+.btn-2 {
+    background: var(--main-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-black-100);
+    font-weight: 500;
+}
+
+.btn-2:focus {
+    box-shadow: var(--shadow-black-100);
+}
+
+.btn-2:hover {
+    color: var(--main-color);
+    background: #ffffff;
+}
+
 @keyframes spin_01 {
     0% {
         transform: rotate(0deg);
@@ -594,4 +614,58 @@ ul {
     max-width: 250px;
     display: block;
     margin: auto;
+}
+
+/* -------------------------
+   App Download Section
+--------------------------*/
+.app-download {
+    background: url(../img/download-app-bg.jpg);
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.app-download .section-title h2 {
+    color: #ffffff;
+}
+
+.app-download::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--main-to-dark-color);
+    opacity: 0.7;
+}
+
+.app-download-item {
+    background: var(--black-000);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-black-100);
+}
+
+.app-download-item i {
+    font-size: 30px;
+    color: var(--main-color);
+    display: inline-block;
+}
+.app-download-item h3 {
+    font-size: 22px;
+    color: var(--black-900);
+    margin: 20px 0;
+    font-weight: 500;
+}
+.app-download-item p {
+    font-size: 16px;
+    color: var(--black-400);
+    font-weight: 0 0 30px;
+    list-style: 26px;
 }
