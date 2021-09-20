@@ -872,3 +872,31 @@ ul {
     padding: 20px 30px 30px;
     text-align: center;
 }
+
+/* -------------------------
+   Team Section
+--------------------------*/
+.team {
+    background: var(--black-100);
+}
+
+.team-item {
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-black-100);
+}
+
+.team-item h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--black-900);
+    margin: 15px 0 8px;
+}
+
+.team-item span {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-400);
+}
