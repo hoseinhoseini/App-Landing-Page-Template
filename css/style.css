@@ -717,3 +717,78 @@ ul {
     margin: 0;
     color: var(--black-400);
 }
+
+/* -------------------------
+   How it Works Section
+--------------------------*/
+.testimonials {
+    background: var(--black-100);
+}
+
+.testimonals-item {
+    margin: 15px;
+    padding: 30px;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonals-item .img-box {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-bottom: 30px;
+    border: 4px solid var(--main-color);
+    border-radius: 50%;
+    position: relative;
+}
+
+.testimonals-item .img-box img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.testimonals-item .img-box i {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: center;
+    left: calc(100% - 15px);
+    top: calc(50% - 15px);
+}
+
+.testimonals-item p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-400);
+    line-height: 26px;
+    margin-right: 0 0 20px;
+}
+
+.testimonals-item h3 {
+    font-size: 22px;
+    color: var(--black-900);
+    font-weight: 500;
+    margin: 0 0 5px;
+}
+
+.testimonals-item span {
+    display: block;
+    font-size: 16px;
+    color: var(--black-400);
+    font-weight: 300;
+}
+
+.testimonals-item .rating {
+    margin-top: 10px;
+}
+
+.testimonals-item .rating i {
+    font-size: 16px;
+    display: inline-block;
+    color: var(--color-2);
+}
