@@ -138,6 +138,50 @@ $('.team-carousel').owlCarousel({
 // ----------------------------------------------------------------
 // --------------------- Page Scrolling - Scrollit  ---------------
 // ----------------------------------------------------------------
-jQuery.scrollIt({
+$.scrollIt({
     topOffset: -50,
 })
+
+// ----------------------------------------------------------------
+// --------------------- Navbar Collapse  -------------------------
+// ----------------------------------------------------------------
+$('.nav-link').on('click', function () {
+    $('.navbar-collapse').collapse('hide')
+})
+
+// ----------------------------------------------------------------
+// ------------ Toggler Theme - Light & Dark Mode  ----------------
+// ----------------------------------------------------------------
+function toggleTheme() {
+    updateIcon()
+}
+
+toggleTheme()
+
+function updateIcon() {
+    if ($('body').hasClass('dark')) {
+        $('.toggle-theme i').removeClass('fa-moon')
+        $('.toggle-theme i').addClass('fa-sun')
+    } else {
+        $('.toggle-theme i').removeClass('fa-sun')
+        $('.toggle-theme i').addClass('fa-moon')
+    }
+}
+
+$('.toggle-theme').on('click', function () {
+    $('body').toggleClass('dark')
+
+    if ($('body').hasClass('dark')) {
+        localStorage.setItem('hossein-theme', 'dark')
+    } else {
+        localStorage.setItem('hossein-theme', 'light')
+    }
+})
+
+if (localStorage.getItem('hossein-theme') !== null) {
+    if (localStorage.getItem('hossein-theme') === 'dark') {
+        $('body').addClass('dark')
+    } else {
+        $('body').removeClass('dark')
+    }
+}
