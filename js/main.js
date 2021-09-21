@@ -142,21 +142,9 @@ function toggleTheme() {
     updateIcon()
 }
 
-toggleTheme()
-
-function updateIcon() {
-    if ($('body').hasClass('dark')) {
-        $('.toggle-theme i').removeClass('fa-moon')
-        $('.toggle-theme i').addClass('fa-sun')
-    } else {
-        $('.toggle-theme i').removeClass('fa-sun')
-        $('.toggle-theme i').addClass('fa-moon')
-    }
-}
-
 $('.toggle-theme').on('click', function () {
     $('body').toggleClass('dark')
-
+    toggleTheme()
     if ($('body').hasClass('dark')) {
         localStorage.setItem('hossein-theme', 'dark')
     } else {
@@ -169,5 +157,15 @@ if (localStorage.getItem('hossein-theme') !== null) {
         $('body').addClass('dark')
     } else {
         $('body').removeClass('dark')
+    }
+}
+
+function updateIcon() {
+    if ($('body').hasClass('dark')) {
+        $('#toggle-icon').addClass('fa-sun')
+        $('#toggle-icon').removeClass('fa-moon')
+    } else {
+        $('#toggle-icon').removeClass('fa-sun')
+        $('#toggle-icon').addClass('fa-moon')
     }
 }
